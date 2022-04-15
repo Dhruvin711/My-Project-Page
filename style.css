@@ -68,6 +68,12 @@ nav h1 {
   opacity: 100%;
 }
 
+@media (max-width: 700px) {
+  .nav-bar {
+    padding: 30px 30px 20px;
+  }
+}
+
 /* PROJECT PAGE */
 
 .card-page {
@@ -166,4 +172,52 @@ nav h1 {
 .card-btn:hover, .card-btn:focus {
   background-color: #7510f7;
   color: white;
+}
+
+.bar-btn {
+  color: #7510f7;
+  font-size: 2rem;
+  float: right;
+  padding-top: 0;
+  margin-right: -10px;
+  margin-top: -8px;
+  display: none;
+}
+.bar-btn:hover {
+  color: #7510f7;
+}
+
+#check {
+  display: none;
+}
+
+
+@media (max-width: 570px) {
+  .nav-bar {
+      padding: 20px;
+  }
+
+  .nav-bar a {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-bar .about-btn {
+    padding-left: 40px;
+  }
+
+  .bar0 {
+    display: block;
+  }
+
+  #check:checked ~ a {
+    display: block;
+  }
+  #check:checked ~ .bar0 {
+    display: none;
+  }
+  #check:checked ~ .close0 {
+    display: block;
+  }
 }
